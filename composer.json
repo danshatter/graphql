@@ -1,0 +1,20 @@
+{
+    "name": "danshatter/graphql",
+    "description": "Introduction to base GraphQL",
+    "authors": [
+        {
+            "name": "danshatter",
+            "email": "isikakudaniel@yahoo.com"
+        }
+    ],
+    "require": {
+        "webonyx/graphql-php": "^15.2",
+        "illuminate/database": "^10.6",
+        "firebase/php-jwt": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
