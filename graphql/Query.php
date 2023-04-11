@@ -26,7 +26,7 @@ return new ObjectType([
             'args' => [
                 'id' => Type::nonNull(Type::id()),
             ],
-            'resolve' => fn($root, $args, $context, $info) => isset($context['user']) ? Post::where('user_id', $context['user']['id'])->find($args['id']) : null
+            'resolve' => fn($root, $args, $context, $info) => isset($context['user']) ? Post::where('user_id', $context['user']['id'])->find($args['id'])->toArray() : null
         ],
     ]
 ]);
